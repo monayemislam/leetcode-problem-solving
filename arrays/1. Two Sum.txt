@@ -1,0 +1,16 @@
+class Solution {
+    public function twoSum($nums, $target) {
+        $arrayLength = count($nums);
+        for($i=0;$i<$arrayLength;$i++)
+        {
+            for($j=$i+1;$j<$arrayLength;$j++)
+            {
+                if($target==$nums[$i]+$nums[$j])
+                {
+                    return array($i,$j);
+                }
+            }
+        }
+        return null;
+    }
+}
